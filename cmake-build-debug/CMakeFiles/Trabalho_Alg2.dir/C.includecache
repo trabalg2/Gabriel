@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Arquivos D/CC/Trabalho Alg2/modelo/cliente.h
+
+C:/Arquivos D/CC/Trabalho Alg2/modelo/ponteiros.h
+stdio.h
+-
+
+C:/Arquivos D/CC/Trabalho Alg2/persistencia/clientes_txt.c
+stdio.h
+-
+../modelo/cliente.h
+C:/Arquivos D/CC/Trabalho Alg2/modelo/cliente.h
+../modelo/ponteiros.h
+C:/Arquivos D/CC/Trabalho Alg2/modelo/ponteiros.h
+
