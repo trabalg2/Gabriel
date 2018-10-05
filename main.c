@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "modelo/cliente.h"
-#include "persistencia/clientes_txt.h"
+#include "persistencia/cadastro_txt/clientes_txt.h"
 
 int main (){
     int x;

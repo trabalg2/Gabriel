@@ -6,7 +6,7 @@
 #define TRABALHO_ALG2_CLIENTES_TXT_H
 
 #include <stdio.h>
-#include "../modelo/cliente.h"
+#include "../../modelo/cliente.h"
 
 int cad_cliente_txt(cliente *c);
 

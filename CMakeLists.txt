@@ -3,4 +3,4 @@ project(Trabalho_Alg2 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Trabalho_Alg2 main.c persistencia/clientes_txt.h modelo/cliente.h persistencia/clientes_txt.c modelo/ponteiros.h)
+add_executable(Trabalho_Alg2 main.c persistencia/cadastro_txt/clientes_txt.h modelo/cliente.h persistencia/cadastro_txt/clientes_txt.c modelo/ponteiros.h)

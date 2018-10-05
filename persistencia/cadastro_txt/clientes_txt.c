@@ -3,11 +3,11 @@
 //
 
 #include <stdio.h>
-#include "../modelo/cliente.h"
-#include "../modelo/ponteiros.h"
+#include "../../modelo/cliente.h"
+#include "../../modelo/ponteiros.h"
 
 int cad_cliente_txt(cliente *c){
-    txt=fopen("../clientes.txt","a");
+    txt=fopen("../../clientes.txt","a");
     if (txt==NULL) {
         return 0;
     } else {
