@@ -69,29 +69,29 @@ CMakeFiles/Trabalho_Alg2.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Alg2.dir/main.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Arquivos D\CC\Trabalho Alg2\main.c" -o CMakeFiles\Trabalho_Alg2.dir\main.c.s
 
-CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.obj: CMakeFiles/Trabalho_Alg2.dir/flags.make
-CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.obj: ../persistencia/clientes_txt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Alg2.dir\persistencia\clientes_txt.c.obj   -c "C:\Arquivos D\CC\Trabalho Alg2\persistencia\clientes_txt.c"
+CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: CMakeFiles/Trabalho_Alg2.dir/flags.make
+CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: ../persistencia/cadastro_txt/clientes_txt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Alg2.dir\persistencia\cadastro_txt\clientes_txt.c.obj   -c "C:\Arquivos D\CC\Trabalho Alg2\persistencia\cadastro_txt\clientes_txt.c"
 
-CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Arquivos D\CC\Trabalho Alg2\persistencia\clientes_txt.c" > CMakeFiles\Trabalho_Alg2.dir\persistencia\clientes_txt.c.i
+CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Arquivos D\CC\Trabalho Alg2\persistencia\cadastro_txt\clientes_txt.c" > CMakeFiles\Trabalho_Alg2.dir\persistencia\cadastro_txt\clientes_txt.c.i
 
-CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Arquivos D\CC\Trabalho Alg2\persistencia\clientes_txt.c" -o CMakeFiles\Trabalho_Alg2.dir\persistencia\clientes_txt.c.s
+CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Arquivos D\CC\Trabalho Alg2\persistencia\cadastro_txt\clientes_txt.c" -o CMakeFiles\Trabalho_Alg2.dir\persistencia\cadastro_txt\clientes_txt.c.s
 
 # Object files for target Trabalho_Alg2
 Trabalho_Alg2_OBJECTS = \
 "CMakeFiles/Trabalho_Alg2.dir/main.c.obj" \
-"CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.obj"
+"CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj"
 
 # External object files for target Trabalho_Alg2
 Trabalho_Alg2_EXTERNAL_OBJECTS =
 
 Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/main.c.obj
-Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.obj
+Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj
 Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/build.make
 Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/linklibs.rsp
 Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/objects1.rsp

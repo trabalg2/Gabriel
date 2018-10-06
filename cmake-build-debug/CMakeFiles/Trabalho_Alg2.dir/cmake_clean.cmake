@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Trabalho_Alg2.dir/main.c.obj"
-  "CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.obj"
+  "CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj"
   "Trabalho_Alg2.pdb"
   "Trabalho_Alg2.exe"
   "Trabalho_Alg2.exe.manifest"

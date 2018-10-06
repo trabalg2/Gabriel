@@ -83,10 +83,13 @@
 		<Unit filename="C:/Arquivos D/CC/Trabalho Alg2/modelo/ponteiros.h">
 			<Option target="Trabalho_Alg2"/>
 		</Unit>
-		<Unit filename="C:/Arquivos D/CC/Trabalho Alg2/persistencia/clientes_txt.c">
+		<Unit filename="C:/Arquivos D/CC/Trabalho Alg2/modelo/variaveis.h">
 			<Option target="Trabalho_Alg2"/>
 		</Unit>
-		<Unit filename="C:/Arquivos D/CC/Trabalho Alg2/persistencia/clientes_txt.h">
+		<Unit filename="C:/Arquivos D/CC/Trabalho Alg2/persistencia/cadastro_txt/clientes_txt.c">
+			<Option target="Trabalho_Alg2"/>
+		</Unit>
+		<Unit filename="C:/Arquivos D/CC/Trabalho Alg2/persistencia/cadastro_txt/clientes_txt.h">
 			<Option target="Trabalho_Alg2"/>
 		</Unit>
 		<Unit filename="C:/Arquivos D/CC/Trabalho Alg2/CMakeLists.txt">

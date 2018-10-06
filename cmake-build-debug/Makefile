@@ -149,32 +149,32 @@ main.c.s:
 	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/main.c.s
 .PHONY : main.c.s
 
-persistencia/clientes_txt.obj: persistencia/clientes_txt.c.obj
+persistencia/cadastro_txt/clientes_txt.obj: persistencia/cadastro_txt/clientes_txt.c.obj
 
-.PHONY : persistencia/clientes_txt.obj
+.PHONY : persistencia/cadastro_txt/clientes_txt.obj
 
 # target to build an object file
-persistencia/clientes_txt.c.obj:
-	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.obj
-.PHONY : persistencia/clientes_txt.c.obj
+persistencia/cadastro_txt/clientes_txt.c.obj:
+	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj
+.PHONY : persistencia/cadastro_txt/clientes_txt.c.obj
 
-persistencia/clientes_txt.i: persistencia/clientes_txt.c.i
+persistencia/cadastro_txt/clientes_txt.i: persistencia/cadastro_txt/clientes_txt.c.i
 
-.PHONY : persistencia/clientes_txt.i
+.PHONY : persistencia/cadastro_txt/clientes_txt.i
 
 # target to preprocess a source file
-persistencia/clientes_txt.c.i:
-	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.i
-.PHONY : persistencia/clientes_txt.c.i
+persistencia/cadastro_txt/clientes_txt.c.i:
+	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.i
+.PHONY : persistencia/cadastro_txt/clientes_txt.c.i
 
-persistencia/clientes_txt.s: persistencia/clientes_txt.c.s
+persistencia/cadastro_txt/clientes_txt.s: persistencia/cadastro_txt/clientes_txt.c.s
 
-.PHONY : persistencia/clientes_txt.s
+.PHONY : persistencia/cadastro_txt/clientes_txt.s
 
 # target to generate assembly for a file
-persistencia/clientes_txt.c.s:
-	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.s
-.PHONY : persistencia/clientes_txt.c.s
+persistencia/cadastro_txt/clientes_txt.c.s:
+	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.s
+.PHONY : persistencia/cadastro_txt/clientes_txt.c.s
 
 # Help Target
 help:
@@ -188,9 +188,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... persistencia/clientes_txt.obj
-	@echo ... persistencia/clientes_txt.i
-	@echo ... persistencia/clientes_txt.s
+	@echo ... persistencia/cadastro_txt/clientes_txt.obj
+	@echo ... persistencia/cadastro_txt/clientes_txt.i
+	@echo ... persistencia/cadastro_txt/clientes_txt.s
 .PHONY : help
 
 
