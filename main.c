@@ -6,6 +6,7 @@
 
 int main (){
 
+    c=(cliente*)malloc(sizeof(cliente)*1);
     scanf("%d",&c->codigo);
     fflush(stdin);
     gets(c->nome);
@@ -24,7 +25,7 @@ int main (){
     fflush(stdin);
     gets(c->datanasc);
     fflush(stdin);
-    c=(cliente*)malloc(sizeof(cliente)*1);
+
     cad_cliente_txt(c);
 
     return 0;

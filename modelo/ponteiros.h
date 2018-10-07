@@ -8,5 +8,6 @@
 #include <stdio.h>
 
 FILE *txt;
+FILE *qtd_cad_txt;
 
 #endif //TRABALHO_ALG2_PONTEIROS_H

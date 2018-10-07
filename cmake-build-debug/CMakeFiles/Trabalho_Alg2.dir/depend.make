@@ -3,9 +3,11 @@
 
 CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../main.c
 CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../modelo/cliente.h
-CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../persistencia/clientes_txt.h
+CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../modelo/variaveis.h
+CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../persistencia/cadastro_txt/clientes_txt.h
 
-CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.obj: ../modelo/cliente.h
-CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.obj: ../modelo/ponteiros.h
-CMakeFiles/Trabalho_Alg2.dir/persistencia/clientes_txt.c.obj: ../persistencia/clientes_txt.c
+CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: ../modelo/cliente.h
+CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: ../modelo/ponteiros.h
+CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: ../modelo/variaveis.h
+CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: ../persistencia/cadastro_txt/clientes_txt.c
 

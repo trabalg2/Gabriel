@@ -8,5 +8,6 @@
 #include "cliente.h"
 
 cliente *c;
+int qtd_clientes_txt;
 
 #endif //TRABALHO_ALG2_VARIAVEIS_H

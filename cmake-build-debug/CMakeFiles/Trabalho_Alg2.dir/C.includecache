@@ -6,17 +6,41 @@
 
 #IncludeRegexTransform: 
 
+C:/Arquivos D/CC/Trabalho Alg2/main.c
+stdio.h
+-
+stdlib.h
+-
+modelo/cliente.h
+C:/Arquivos D/CC/Trabalho Alg2/modelo/cliente.h
+persistencia/cadastro_txt/clientes_txt.h
+C:/Arquivos D/CC/Trabalho Alg2/persistencia/cadastro_txt/clientes_txt.h
+modelo/variaveis.h
+C:/Arquivos D/CC/Trabalho Alg2/modelo/variaveis.h
+
 C:/Arquivos D/CC/Trabalho Alg2/modelo/cliente.h
 
 C:/Arquivos D/CC/Trabalho Alg2/modelo/ponteiros.h
 stdio.h
 -
 
-C:/Arquivos D/CC/Trabalho Alg2/persistencia/clientes_txt.c
+C:/Arquivos D/CC/Trabalho Alg2/modelo/variaveis.h
+cliente.h
+C:/Arquivos D/CC/Trabalho Alg2/modelo/cliente.h
+
+C:/Arquivos D/CC/Trabalho Alg2/persistencia/cadastro_txt/clientes_txt.c
 stdio.h
 -
-../modelo/cliente.h
+../../modelo/cliente.h
 C:/Arquivos D/CC/Trabalho Alg2/modelo/cliente.h
-../modelo/ponteiros.h
+../../modelo/ponteiros.h
 C:/Arquivos D/CC/Trabalho Alg2/modelo/ponteiros.h
+../../modelo/variaveis.h
+C:/Arquivos D/CC/Trabalho Alg2/modelo/variaveis.h
+
+C:/Arquivos D/CC/Trabalho Alg2/persistencia/cadastro_txt/clientes_txt.h
+stdio.h
+-
+../../modelo/cliente.h
+C:/Arquivos D/CC/Trabalho Alg2/modelo/cliente.h
 
