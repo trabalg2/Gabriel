@@ -74,6 +74,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/conio.c">
+			<Option target="Trabalho_Alg2"/>
+		</Unit>
+		<Unit filename="C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/conio.h">
+			<Option target="Trabalho_Alg2"/>
+		</Unit>
+		<Unit filename="C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/utilidades.c">
+			<Option target="Trabalho_Alg2"/>
+		</Unit>
+		<Unit filename="C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/utilidades.h">
+			<Option target="Trabalho_Alg2"/>
+		</Unit>
 		<Unit filename="C:/Arquivos D/CC/Trabalho Alg2/main.c">
 			<Option target="Trabalho_Alg2"/>
 		</Unit>

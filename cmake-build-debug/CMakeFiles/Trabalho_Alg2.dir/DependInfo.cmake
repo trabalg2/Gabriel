@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/conio.c" "C:/Arquivos D/CC/Trabalho Alg2/cmake-build-debug/CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.obj"
+  "C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/utilidades.c" "C:/Arquivos D/CC/Trabalho Alg2/cmake-build-debug/CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.obj"
   "C:/Arquivos D/CC/Trabalho Alg2/main.c" "C:/Arquivos D/CC/Trabalho Alg2/cmake-build-debug/CMakeFiles/Trabalho_Alg2.dir/main.c.obj"
   "C:/Arquivos D/CC/Trabalho Alg2/persistencia/cadastro_txt/clientes_txt.c" "C:/Arquivos D/CC/Trabalho Alg2/cmake-build-debug/CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj"
   )

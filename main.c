@@ -3,30 +3,19 @@
 #include "modelo/cliente.h"
 #include "persistencia/cadastro_txt/clientes_txt.h"
 #include "modelo/variaveis.h"
+#include "bibliotecas/utilidades.h"
+#include <string.h>
+
+
 
 int main (){
-
-    c=(cliente*)malloc(sizeof(cliente)*1);
-    scanf("%d",&c->codigo);
-    fflush(stdin);
-    gets(c->nome);
-    fflush(stdin);
-    gets(c->endereco);
-    fflush(stdin);
-    gets(c->cpf );
-    fflush(stdin);
-    gets(c->tel );
-    fflush(stdin);
-    gets(c->email );
-    fflush(stdin);
-    scanf("%c",&c->sexo );
-    fflush(stdin);
-    gets(c->estadocivil);
-    fflush(stdin);
-    gets(c->datanasc);
-    fflush(stdin);
-
-    cad_cliente_txt(c);
+//    char str[4];
+//    strcpy(str,"1500");
+//    printf("%d",strtoint(str));
+    le_dados();
+    le_cliente_txt();
+    libera_memoria();
+    system("pause");
 
     return 0;
 }

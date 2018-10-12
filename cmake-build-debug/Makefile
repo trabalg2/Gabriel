@@ -122,6 +122,60 @@ Trabalho_Alg2/fast:
 	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/build
 .PHONY : Trabalho_Alg2/fast
 
+bibliotecas/conio.obj: bibliotecas/conio.c.obj
+
+.PHONY : bibliotecas/conio.obj
+
+# target to build an object file
+bibliotecas/conio.c.obj:
+	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.obj
+.PHONY : bibliotecas/conio.c.obj
+
+bibliotecas/conio.i: bibliotecas/conio.c.i
+
+.PHONY : bibliotecas/conio.i
+
+# target to preprocess a source file
+bibliotecas/conio.c.i:
+	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.i
+.PHONY : bibliotecas/conio.c.i
+
+bibliotecas/conio.s: bibliotecas/conio.c.s
+
+.PHONY : bibliotecas/conio.s
+
+# target to generate assembly for a file
+bibliotecas/conio.c.s:
+	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.s
+.PHONY : bibliotecas/conio.c.s
+
+bibliotecas/utilidades.obj: bibliotecas/utilidades.c.obj
+
+.PHONY : bibliotecas/utilidades.obj
+
+# target to build an object file
+bibliotecas/utilidades.c.obj:
+	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.obj
+.PHONY : bibliotecas/utilidades.c.obj
+
+bibliotecas/utilidades.i: bibliotecas/utilidades.c.i
+
+.PHONY : bibliotecas/utilidades.i
+
+# target to preprocess a source file
+bibliotecas/utilidades.c.i:
+	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.i
+.PHONY : bibliotecas/utilidades.c.i
+
+bibliotecas/utilidades.s: bibliotecas/utilidades.c.s
+
+.PHONY : bibliotecas/utilidades.s
+
+# target to generate assembly for a file
+bibliotecas/utilidades.c.s:
+	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.s
+.PHONY : bibliotecas/utilidades.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -185,6 +239,12 @@ help:
 	@echo ... Trabalho_Alg2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... bibliotecas/conio.obj
+	@echo ... bibliotecas/conio.i
+	@echo ... bibliotecas/conio.s
+	@echo ... bibliotecas/utilidades.obj
+	@echo ... bibliotecas/utilidades.i
+	@echo ... bibliotecas/utilidades.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
