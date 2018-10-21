@@ -14,6 +14,7 @@
 
 
 int le_qtd_clientes_txt(){
+    int qtd=0;
 
     struct stat st;
 
@@ -26,16 +27,19 @@ int le_qtd_clientes_txt(){
         if(st.st_size==0)
         {
             qtd_clientes_txt=0;
-            return 1;
+            qtd=0;
+            return qtd;
         }
         else
         {
-            fscanf(qtd_cad_txt,"%d\n",&qtd_clientes_txt);
+            fscanf(qtd_cad_txt,"%d",&qtd_clientes_txt);
+            qtd=qtd_clientes_txt;
             fclose(qtd_cad_txt);
-            return 1;
+            return qtd;
         }
     }else{
-        return 0;
+        qtd_clientes_txt=0;
+        return qtd;
     }
 }
 
@@ -49,33 +53,14 @@ void libera_memoria(){
     c=NULL;
 }
 
-int aumenta_clientes_txt(){
-    if(le_qtd_clientes_txt()){
-        qtd_clientes_txt++;
-        qtd_cad_txt=fopen("../arquivos/txt/qtd_clientes.txt","w");
-        if(qtd_cad_txt!=NULL){
-            fprintf(qtd_cad_txt,"%d",qtd_clientes_txt);
-            fclose(qtd_cad_txt);
-            return 1;
-        }else{
-            return 0;
-        }
-    }else{
-        return 0;
-    }
-}
-
-int diminui_clientes_txt(){
-    if(le_qtd_clientes_txt()){
-        qtd_clientes_txt--;
-        qtd_cad_txt=fopen("../arquivos/txt/qtd_clientes.txt","w");
-        if(qtd_cad_txt!=NULL){
-            fprintf(qtd_cad_txt,"%d",qtd_clientes_txt);
-            fclose(qtd_cad_txt);
-            return 1;
-        }else{
-            return 0;
-        }
+int altera_qtd_clientes_txt(int quantidade){
+    le_qtd_clientes_txt();
+    qtd_clientes_txt+=quantidade;
+    qtd_cad_txt=fopen("../arquivos/txt/qtd_clientes.txt","w");
+    if(qtd_cad_txt!=NULL){
+        fprintf(qtd_cad_txt,"%d",qtd_clientes_txt);
+        fclose(qtd_cad_txt);
+        return 1;
     }else{
         return 0;
     }
@@ -83,7 +68,8 @@ int diminui_clientes_txt(){
 
 int le_cliente_txt(){
     int cont=0;
-    char str[100]="";
+    char *token;
+    char str[500]="";
     int dados=0;
 
     le_qtd_clientes_txt();
@@ -93,32 +79,34 @@ int le_cliente_txt(){
     txt=fopen("../arquivos/txt/clientes.txt","r");
 
     if(txt!=NULL){
-        while ((fgets(str, sizeof(str),txt))!=EOF && cont<qtd_clientes_txt) {
-            if (dados==9) {
-                dados = 0;
-                cont++;
+        while (fgets(str, sizeof(str),txt)!=NULL) {
+            token=strtok(str, ";");
+            while (token!=NULL){
+                if (dados == 0) {
+                    (c+cont)->codigo = atoi(token);
+                } else if (dados == 1) {
+                    strcpy((c+cont)->nome, token);
+                } else if (dados == 2) {
+                    strcpy((c+cont)->endereco, token);
+                } else if (dados == 3) {
+                    strcpy((c+cont)->cpf, token);
+                } else if (dados == 4) {
+                    strcpy((c+cont)->tel, token);
+                } else if (dados == 5) {
+                    strcpy((c+cont)->email, token);
+                } else if (dados == 6) {
+                    strcpy((c+cont)->sexo,token);
+                } else if (dados == 7) {
+                    strcpy((c+cont)->estadocivil, token);
+                } else if (dados == 8) {
+                    strcpy((c+cont)->datanasc, token);
+                }
+                dados++;
+                printf("%s\n",token);
+                token=strtok(NULL,";");
             }
-            strtok(str, "\n");
-            if (dados == 0) {
-                c[cont].codigo = atoi(str);
-            } else if (dados == 1) {
-                strcpy(c[cont].nome, str);
-            } else if (dados == 2) {
-                strcpy(c[cont].endereco, str);
-            } else if (dados == 3) {
-                strcpy(c[cont].cpf, str);
-            } else if (dados == 4) {
-                strcpy(c[cont].tel, str);
-            } else if (dados == 5) {
-                strcpy(c[cont].email, str);
-            } else if (dados == 6) {
-                c[cont].sexo=str[0];
-            } else if (dados == 7) {
-                strcpy(c[cont].estadocivil, str);
-            } else if (dados == 8) {
-                strcpy(c[cont].datanasc, str);
-            }
-            dados++;
+            cont++;
+            dados = 0;
         }
         fclose(txt);
         return 1;
@@ -127,80 +115,103 @@ int le_cliente_txt(){
     }
 }
 
-int grava_cliente_txt(){
-    char cod[100];
+int grava_cliente_txt(int qtd){
+
     txt=fopen("../arquivos/txt/clientes.txt","w");
     if (txt==NULL) {
         return 0;
     } else {
-        for (int i = 0; i <qtd_clientes_txt+1 ; ++i) {
-            itoa(c[i].codigo,cod,100);
-            if(!(is_empty(cod)) && !(is_empty(c[i].nome)) &&
-                !(is_empty(c[i].endereco))&& !(is_empty(c[i].cpf)) &&
-                !(is_empty(c[i].tel)) && !(is_empty(c[i].email)) && !(is_empty(c[i].estadocivil)) &&
-                !(is_empty(c[i].datanasc)))
+        for (int i = 0; i <qtd_clientes_txt+1 ; i++) {
+            if((c+i)->codigo!=0)
             {
-                fputs(cod,txt);
-                fprintf(txt,"\n");
-                fputs(c[i].nome,txt);
-                fprintf(txt,"\n");
-                fputs(c[i].endereco,txt);
-                fprintf(txt,"\n");
-                fputs(c[i].cpf,txt);
-                fprintf(txt,"\n");
-                fputs(c[i].tel,txt);
-                fprintf(txt,"\n");
-                fputs(c[i].email,txt);
-                fprintf(txt,"\n");
-                fputc(c[i].sexo,txt);
-                fprintf(txt,"\n");
-                fputs(c[i].estadocivil,txt);
-                fprintf(txt,"\n");
-                fputs(c[i].datanasc,txt);
-                fprintf(txt,"\n");
+                fprintf(txt,"%d;",(c+i)->codigo);
+                fprintf(txt,"%s;",(c+i)->nome);
+                fprintf(txt,"%s;",(c+i)->endereco);
+               fprintf(txt,"%s;",(c+i)->cpf );
+               fprintf(txt,"%s;",(c+i)->tel );
+               fprintf(txt,"%s;",(c+i)->email );
+               fprintf(txt,"%s;",(c+i)->sexo );
+               fprintf(txt,"%s;",(c+i)->estadocivil );
+               fprintf(txt,"%s;",(c+i)->datanasc );
+
             }
         }
-        aumenta_clientes_txt();
+        altera_qtd_clientes_txt(qtd);
         fclose(txt);
         return 1;
     }
+}
+
+int remove_cliente_txt(){
+    int cod,cont;
+    cont=0;
+    le_cliente_txt();
+    printf("Digite o codigo do clliente que deseja Remover:\n");
+    scanf("%d%*c",&cod);
+    for (int i = 0; i < qtd_clientes_txt; ++i) {
+        if(c[i].codigo==cod){
+            c[i].codigo=0;
+            cont++;
+        }
+    }
+    grava_cliente_txt(-1);
 }
 
 
 
 void le_dados(){
-    le_qtd_clientes_txt();
-    if(qtd_clientes_txt>0){
-        le_cliente_txt();
-    }else{
-        aloca_memoria(1);
-    }
-    c[qtd_clientes_txt].codigo=qtd_clientes_txt+1;
+    aloca_memoria(le_qtd_clientes_txt()+1);
+
+    cliente c;
+
+    c.codigo=1;
+
     printf("Digite o Nome do Cliente(Ex.:João das Couves):\n");
-    gets(c[qtd_clientes_txt].nome);
-    fflush(stdin);
+    scanf("%[^\n]*c", c.nome);
+    setbuf(stdin, NULL);
+
     printf("Digite o Endereço do Cliente(Ex.:Rua exemplo,111,Bairro,Cidade):\n");
-    gets(c[qtd_clientes_txt].endereco);
-    fflush(stdin);
+    scanf("%[^\n]*c", c.endereco);
+    setbuf(stdin, NULL);
+
     printf("Digite o cpf do Cliente (Ex.:00000000000):\n");
-    gets(c[qtd_clientes_txt].cpf);
-    fflush(stdin);
+    scanf("%s*c", c.cpf);
+    setbuf(stdin, NULL);
+
     printf("Digite o Telefone  do Cliente (Ex.:5537999999999):\n");
-    gets(c[qtd_clientes_txt].tel);
-    fflush(stdin);
+    scanf("%s*c",c.tel);
+    setbuf(stdin, NULL);
+
     printf("Digite o email do Cliente (teste@example.com):\n");
-    gets(c[qtd_clientes_txt].email );
-    fflush(stdin);
+    scanf("%s*c", c.email );
+    setbuf(stdin, NULL);
+
     printf("Digite o Sexo do Cliente (M-Masculino/F-Feminino):\n");
-    scanf("%c",&c[qtd_clientes_txt].sexo );
-    fflush(stdin);
+    scanf("%s*c",c.sexo );
+    setbuf(stdin, NULL);
+
     printf("Digite o estado civil do Cliente:\n");
-    gets(c[qtd_clientes_txt].estadocivil);
-    fflush(stdin);
+    scanf("%s*c",c.estadocivil);
+    setbuf(stdin, NULL);
+
     printf("Digite a Data de Nascimento do Cliente(DD/MM/AAAA):\n");
-    gets(c[qtd_clientes_txt].datanasc);
-    fflush(stdin);
-    grava_cliente_txt();
+    scanf("%s*c", c.datanasc);
+    setbuf(stdin, NULL);
+
+    textcolor(BLUE);
+    printf("%d\n",c.codigo);
+    printf("%s\n",c.nome);
+    printf("%s\n",c.endereco);
+    printf("%s\n",c.cpf);
+    printf("%s\n",c.tel);
+    printf("%s\n",c.email);
+    printf("%c\n",c.sexo);
+    printf("%s\n",c.estadocivil);
+    printf("%s\n",c.datanasc);
+    textcolor(WHITE);
+
+
+    grava_cliente_txt(1);
 }
 
 

@@ -9,10 +9,10 @@ typedef struct{
     int codigo;
     char nome[100];
     char endereco[100];
-    char cpf[11];
-    char tel[13];
+    char cpf[12];
+    char tel[14];
     char email[64];
-    char sexo;
+    char sexo[1];
     char estadocivil[10];
     char datanasc[10];
 }cliente;

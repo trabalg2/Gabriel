@@ -10,8 +10,7 @@
 
 int grava_cliente_txt();
 int le_qtd_clientes_txt();
-int aumenta_clientes_txt();
-int diminui_clientes_txt();
+int altera_qtd_clientes_txt(int quantidade);
 int le_cliente_txt();
 void libera_memoria();
 void aloca_memoria(int qtd);

@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/conio.h
+stdio.h
+-
+
 C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/utilidades.h
 
 C:/Arquivos D/CC/Trabalho Alg2/modelo/cliente.h
@@ -35,4 +39,6 @@ C:/Arquivos D/CC/Trabalho Alg2/modelo/variaveis.h
 C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/utilidades.h
 string.h
 -
+../../bibliotecas/conio.h
+C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/conio.h
 
