@@ -116,7 +116,7 @@ int le_cliente_txt(){
     }
 }
 
-int grava_cliente_txt(cliente cnovo,int qtd){
+int grava_cliente_txt(cliente *cnovo,int qtd){
 
     txt=fopen("../arquivos/txt/clientes.txt","w");
     if (txt==NULL) {
@@ -155,7 +155,7 @@ int remove_cliente_txt(){
             cont++;
         }
     }
-    grava_cliente_txt(-1);
+//    grava_cliente_txt(-1);
 }
 
 
@@ -205,13 +205,13 @@ void le_dados(){
     printf("%s\n",c.cpf);
     printf("%s\n",c.tel);
     printf("%s\n",c.email);
-    printf("%c\n",c.sexo);
+    printf("%s\n",c.sexo);
     printf("%s\n",c.estadocivil);
     printf("%s\n",c.datanasc);
     textcolor(WHITE);
 
 
-    grava_cliente_txt(le_qtd_clientes_txt()+1);
+    grava_cliente_txt(&c,le_qtd_clientes_txt()+1);
 }
 
 
