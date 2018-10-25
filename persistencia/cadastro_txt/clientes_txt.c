@@ -45,7 +45,8 @@ int le_qtd_clientes_txt(){
 
 void aloca_memoria(int qtd){
     le_qtd_clientes_txt();
-    c=(cliente *)malloc(sizeof(cliente)*(qtd));
+    c=(c==NULL) ? (cliente*)malloc(sizeof(cliente)*(qtd)):
+            realloc(c, sizeof(cliente)*qtd);
 }
 
 void libera_memoria(){
@@ -74,7 +75,7 @@ int le_cliente_txt(){
 
     le_qtd_clientes_txt();
 
-    aloca_memoria(qtd_clientes_txt+1);
+    aloca_memoria(le_qtd_clientes_txt()+1);
 
     txt=fopen("../arquivos/txt/clientes.txt","r");
 
@@ -115,7 +116,7 @@ int le_cliente_txt(){
     }
 }
 
-int grava_cliente_txt(int qtd){
+int grava_cliente_txt(cliente cnovo,int qtd){
 
     txt=fopen("../arquivos/txt/clientes.txt","w");
     if (txt==NULL) {
@@ -124,9 +125,9 @@ int grava_cliente_txt(int qtd){
         for (int i = 0; i <qtd_clientes_txt+1 ; i++) {
             if((c+i)->codigo!=0)
             {
-                fprintf(txt,"%d;",(c+i)->codigo);
-                fprintf(txt,"%s;",(c+i)->nome);
-                fprintf(txt,"%s;",(c+i)->endereco);
+               fprintf(txt,"%d;",(c+i)->codigo);
+               fprintf(txt,"%s;",(c+i)->nome);
+               fprintf(txt,"%s;",(c+i)->endereco);
                fprintf(txt,"%s;",(c+i)->cpf );
                fprintf(txt,"%s;",(c+i)->tel );
                fprintf(txt,"%s;",(c+i)->email );
@@ -160,7 +161,6 @@ int remove_cliente_txt(){
 
 
 void le_dados(){
-    aloca_memoria(le_qtd_clientes_txt()+1);
 
     cliente c;
 
@@ -211,7 +211,7 @@ void le_dados(){
     textcolor(WHITE);
 
 
-    grava_cliente_txt(1);
+    grava_cliente_txt(le_qtd_clientes_txt()+1);
 }
 
 
