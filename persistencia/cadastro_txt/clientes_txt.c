@@ -126,7 +126,7 @@ int grava_cliente_txt(cliente *all,int qtd){
                fprintf(txt,"%s;",(all+i)->email );
                fprintf(txt,"%s;",(all+i)->sexo );
                fprintf(txt,"%s;",(all+i)->estadocivil );
-               fprintf(txt,"%s;",(all+i)->datanasc );
+               fprintf(txt,"%s;\n",(all+i)->datanasc );
 
             }
         }

@@ -13,7 +13,8 @@
 int main (){
 
     setlocale(LC_ALL,"Portuguese");
-//    le_dados(le_qtd_clientes_txt());
+//    le_cliente_txt();
+    le_dados(le_qtd_clientes_txt());
     mostra_clientes();
     libera_memoria();
     system("pause");

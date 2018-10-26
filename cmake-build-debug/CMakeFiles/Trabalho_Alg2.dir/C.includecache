@@ -6,27 +6,33 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.h
-stdio.h
--
+C:/Users/gabri/Documents/Gabriel/bibliotecas/utilidades.h
 
-C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.c
-stdio.h
--
-cliente_controller.h
 C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.h
 ../modelo/cliente.h
 C:/Users/gabri/Documents/Gabriel/modelo/cliente.h
-../bibliotecas/conio.h
-C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.h
-../modelo/variaveis.h
-C:/Users/gabri/Documents/Gabriel/modelo/variaveis.h
-../persistencia/cadastro_txt/clientes_txt.h
+
+C:/Users/gabri/Documents/Gabriel/main.c
+stdio.h
+-
+stdlib.h
+-
+modelo/cliente.h
+C:/Users/gabri/Documents/Gabriel/modelo/cliente.h
+controller/cliente_controller.h
+C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.h
+persistencia/cadastro_txt/clientes_txt.h
 C:/Users/gabri/Documents/Gabriel/persistencia/cadastro_txt/clientes_txt.h
-
-C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.h
-../modelo/cliente.h
-C:/Users/gabri/Documents/Gabriel/modelo/cliente.h
+modelo/variaveis.h
+C:/Users/gabri/Documents/Gabriel/modelo/variaveis.h
+bibliotecas/utilidades.h
+C:/Users/gabri/Documents/Gabriel/bibliotecas/utilidades.h
+string.h
+-
+locale.h
+-
+unistd.h
+-
 
 C:/Users/gabri/Documents/Gabriel/modelo/cliente.h
 

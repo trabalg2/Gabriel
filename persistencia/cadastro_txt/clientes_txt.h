@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include "../../modelo/cliente.h"
 
-int grava_cliente_txt();
+int grava_cliente_txt(cliente *all,int qtd);
 int le_qtd_clientes_txt();
 int altera_qtd_clientes_txt(int quantidade);
 int le_cliente_txt();

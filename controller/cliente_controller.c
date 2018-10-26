@@ -42,6 +42,10 @@ void libera_memoria(){
     c=NULL;
 }
 
+int valida_dados(cliente *c){
+    if(c.nome)
+}
+
 void le_dados(int qtd){
     if(qtd>0){
         le_cliente_txt();
@@ -87,7 +91,7 @@ void le_dados(int qtd){
     setbuf(stdin, NULL);
 
     salva_cliente(&n_cliente,qtd);
-    grava_cliente_txt();
+    grava_cliente_txt(c,qtd);
 
 }
 
