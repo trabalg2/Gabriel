@@ -12,9 +12,6 @@ int grava_cliente_txt();
 int le_qtd_clientes_txt();
 int altera_qtd_clientes_txt(int quantidade);
 int le_cliente_txt();
-void libera_memoria();
-void aloca_memoria(int qtd);
-void le_dados();
 int altera_cliente_txt();
 int remove_cliente_txt();
 

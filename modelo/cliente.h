@@ -11,10 +11,10 @@ typedef struct{
     char endereco[100];
     char cpf[12];
     char tel[14];
-    char email[64];
-    char sexo[1];
+    char email[100];
+    char sexo[2];
     char estadocivil[10];
-    char datanasc[10];
+    char datanasc[11];
 }cliente;
 
 

@@ -7,7 +7,15 @@ CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.obj: ../bibliotecas/conio.h
 CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.obj: ../bibliotecas/utilidades.c
 CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.obj: ../bibliotecas/utilidades.h
 
+CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj: ../bibliotecas/conio.h
+CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj: ../controller/cliente_controller.c
+CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj: ../controller/cliente_controller.h
+CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj: ../modelo/cliente.h
+CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj: ../modelo/variaveis.h
+CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj: ../persistencia/cadastro_txt/clientes_txt.h
+
 CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../bibliotecas/utilidades.h
+CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../controller/cliente_controller.h
 CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../main.c
 CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../modelo/cliente.h
 CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../modelo/variaveis.h
@@ -15,6 +23,7 @@ CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../persistencia/cadastro_txt/clientes_t
 
 CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: ../bibliotecas/conio.h
 CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: ../bibliotecas/utilidades.h
+CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: ../controller/cliente_controller.h
 CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: ../modelo/cliente.h
 CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: ../modelo/ponteiros.h
 CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: ../modelo/variaveis.h

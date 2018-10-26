@@ -6,39 +6,39 @@
 
 #IncludeRegexTransform: 
 
-C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/conio.h
+C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.h
 stdio.h
 -
 
-C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/utilidades.h
-
-C:/Arquivos D/CC/Trabalho Alg2/modelo/cliente.h
-
-C:/Arquivos D/CC/Trabalho Alg2/modelo/ponteiros.h
+C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.c
 stdio.h
 -
+cliente_controller.h
+C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.h
+../modelo/cliente.h
+C:/Users/gabri/Documents/Gabriel/modelo/cliente.h
+../bibliotecas/conio.h
+C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.h
+../modelo/variaveis.h
+C:/Users/gabri/Documents/Gabriel/modelo/variaveis.h
+../persistencia/cadastro_txt/clientes_txt.h
+C:/Users/gabri/Documents/Gabriel/persistencia/cadastro_txt/clientes_txt.h
 
-C:/Arquivos D/CC/Trabalho Alg2/modelo/variaveis.h
+C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.h
+../modelo/cliente.h
+C:/Users/gabri/Documents/Gabriel/modelo/cliente.h
+
+C:/Users/gabri/Documents/Gabriel/modelo/cliente.h
+
+C:/Users/gabri/Documents/Gabriel/modelo/variaveis.h
 cliente.h
-C:/Arquivos D/CC/Trabalho Alg2/modelo/cliente.h
-
-C:/Arquivos D/CC/Trabalho Alg2/persistencia/cadastro_txt/clientes_txt.c
-stdio.h
--
+C:/Users/gabri/Documents/Gabriel/modelo/cliente.h
 stdlib.h
 -
-sys/stat.h
+
+C:/Users/gabri/Documents/Gabriel/persistencia/cadastro_txt/clientes_txt.h
+stdio.h
 -
 ../../modelo/cliente.h
-C:/Arquivos D/CC/Trabalho Alg2/modelo/cliente.h
-../../modelo/ponteiros.h
-C:/Arquivos D/CC/Trabalho Alg2/modelo/ponteiros.h
-../../modelo/variaveis.h
-C:/Arquivos D/CC/Trabalho Alg2/modelo/variaveis.h
-../../bibliotecas/utilidades.h
-C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/utilidades.h
-string.h
--
-../../bibliotecas/conio.h
-C:/Arquivos D/CC/Trabalho Alg2/bibliotecas/conio.h
+C:/Users/gabri/Documents/Gabriel/modelo/cliente.h
 

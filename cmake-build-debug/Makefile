@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Arquivos D\CC\Trabalho Alg2"
+CMAKE_SOURCE_DIR = C:\Users\gabri\Documents\Gabriel
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\gabri\Documents\Gabriel\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = "C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug"
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug\CMakeFiles" "C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\gabri\Documents\Gabriel\cmake-build-debug\CMakeFiles C:\Users\gabri\Documents\Gabriel\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\gabri\Documents\Gabriel\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,33 @@ bibliotecas/utilidades.c.s:
 	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.s
 .PHONY : bibliotecas/utilidades.c.s
 
+controller/cliente_controller.obj: controller/cliente_controller.c.obj
+
+.PHONY : controller/cliente_controller.obj
+
+# target to build an object file
+controller/cliente_controller.c.obj:
+	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj
+.PHONY : controller/cliente_controller.c.obj
+
+controller/cliente_controller.i: controller/cliente_controller.c.i
+
+.PHONY : controller/cliente_controller.i
+
+# target to preprocess a source file
+controller/cliente_controller.c.i:
+	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.i
+.PHONY : controller/cliente_controller.c.i
+
+controller/cliente_controller.s: controller/cliente_controller.c.s
+
+.PHONY : controller/cliente_controller.s
+
+# target to generate assembly for a file
+controller/cliente_controller.c.s:
+	$(MAKE) -f CMakeFiles\Trabalho_Alg2.dir\build.make CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.s
+.PHONY : controller/cliente_controller.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -245,6 +272,9 @@ help:
 	@echo ... bibliotecas/utilidades.obj
 	@echo ... bibliotecas/utilidades.i
 	@echo ... bibliotecas/utilidades.s
+	@echo ... controller/cliente_controller.obj
+	@echo ... controller/cliente_controller.i
+	@echo ... controller/cliente_controller.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

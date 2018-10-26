@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Arquivos D\CC\Trabalho Alg2"
+CMAKE_SOURCE_DIR = C:\Users\gabri\Documents\Gabriel
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\gabri\Documents\Gabriel\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Trabalho_Alg2.dir/depend.make
@@ -58,62 +58,76 @@ include CMakeFiles/Trabalho_Alg2.dir/flags.make
 
 CMakeFiles/Trabalho_Alg2.dir/main.c.obj: CMakeFiles/Trabalho_Alg2.dir/flags.make
 CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Trabalho_Alg2.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Alg2.dir\main.c.obj   -c "C:\Arquivos D\CC\Trabalho Alg2\main.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gabri\Documents\Gabriel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Trabalho_Alg2.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Alg2.dir\main.c.obj   -c C:\Users\gabri\Documents\Gabriel\main.c
 
 CMakeFiles/Trabalho_Alg2.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Alg2.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Arquivos D\CC\Trabalho Alg2\main.c" > CMakeFiles\Trabalho_Alg2.dir\main.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\gabri\Documents\Gabriel\main.c > CMakeFiles\Trabalho_Alg2.dir\main.c.i
 
 CMakeFiles/Trabalho_Alg2.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Alg2.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Arquivos D\CC\Trabalho Alg2\main.c" -o CMakeFiles\Trabalho_Alg2.dir\main.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\gabri\Documents\Gabriel\main.c -o CMakeFiles\Trabalho_Alg2.dir\main.c.s
 
 CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: CMakeFiles/Trabalho_Alg2.dir/flags.make
 CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj: ../persistencia/cadastro_txt/clientes_txt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Alg2.dir\persistencia\cadastro_txt\clientes_txt.c.obj   -c "C:\Arquivos D\CC\Trabalho Alg2\persistencia\cadastro_txt\clientes_txt.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gabri\Documents\Gabriel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Alg2.dir\persistencia\cadastro_txt\clientes_txt.c.obj   -c C:\Users\gabri\Documents\Gabriel\persistencia\cadastro_txt\clientes_txt.c
 
 CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Arquivos D\CC\Trabalho Alg2\persistencia\cadastro_txt\clientes_txt.c" > CMakeFiles\Trabalho_Alg2.dir\persistencia\cadastro_txt\clientes_txt.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\gabri\Documents\Gabriel\persistencia\cadastro_txt\clientes_txt.c > CMakeFiles\Trabalho_Alg2.dir\persistencia\cadastro_txt\clientes_txt.c.i
 
 CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Arquivos D\CC\Trabalho Alg2\persistencia\cadastro_txt\clientes_txt.c" -o CMakeFiles\Trabalho_Alg2.dir\persistencia\cadastro_txt\clientes_txt.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\gabri\Documents\Gabriel\persistencia\cadastro_txt\clientes_txt.c -o CMakeFiles\Trabalho_Alg2.dir\persistencia\cadastro_txt\clientes_txt.c.s
 
 CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.obj: CMakeFiles/Trabalho_Alg2.dir/flags.make
 CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.obj: ../bibliotecas/utilidades.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Alg2.dir\bibliotecas\utilidades.c.obj   -c "C:\Arquivos D\CC\Trabalho Alg2\bibliotecas\utilidades.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gabri\Documents\Gabriel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Alg2.dir\bibliotecas\utilidades.c.obj   -c C:\Users\gabri\Documents\Gabriel\bibliotecas\utilidades.c
 
 CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Arquivos D\CC\Trabalho Alg2\bibliotecas\utilidades.c" > CMakeFiles\Trabalho_Alg2.dir\bibliotecas\utilidades.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\gabri\Documents\Gabriel\bibliotecas\utilidades.c > CMakeFiles\Trabalho_Alg2.dir\bibliotecas\utilidades.c.i
 
 CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Arquivos D\CC\Trabalho Alg2\bibliotecas\utilidades.c" -o CMakeFiles\Trabalho_Alg2.dir\bibliotecas\utilidades.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\gabri\Documents\Gabriel\bibliotecas\utilidades.c -o CMakeFiles\Trabalho_Alg2.dir\bibliotecas\utilidades.c.s
 
 CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.obj: CMakeFiles/Trabalho_Alg2.dir/flags.make
 CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.obj: ../bibliotecas/conio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Alg2.dir\bibliotecas\conio.c.obj   -c "C:\Arquivos D\CC\Trabalho Alg2\bibliotecas\conio.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gabri\Documents\Gabriel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Alg2.dir\bibliotecas\conio.c.obj   -c C:\Users\gabri\Documents\Gabriel\bibliotecas\conio.c
 
 CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Arquivos D\CC\Trabalho Alg2\bibliotecas\conio.c" > CMakeFiles\Trabalho_Alg2.dir\bibliotecas\conio.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\gabri\Documents\Gabriel\bibliotecas\conio.c > CMakeFiles\Trabalho_Alg2.dir\bibliotecas\conio.c.i
 
 CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Arquivos D\CC\Trabalho Alg2\bibliotecas\conio.c" -o CMakeFiles\Trabalho_Alg2.dir\bibliotecas\conio.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\gabri\Documents\Gabriel\bibliotecas\conio.c -o CMakeFiles\Trabalho_Alg2.dir\bibliotecas\conio.c.s
+
+CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj: CMakeFiles/Trabalho_Alg2.dir/flags.make
+CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj: ../controller/cliente_controller.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gabri\Documents\Gabriel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Alg2.dir\controller\cliente_controller.c.obj   -c C:\Users\gabri\Documents\Gabriel\controller\cliente_controller.c
+
+CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\gabri\Documents\Gabriel\controller\cliente_controller.c > CMakeFiles\Trabalho_Alg2.dir\controller\cliente_controller.c.i
+
+CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\gabri\Documents\Gabriel\controller\cliente_controller.c -o CMakeFiles\Trabalho_Alg2.dir\controller\cliente_controller.c.s
 
 # Object files for target Trabalho_Alg2
 Trabalho_Alg2_OBJECTS = \
 "CMakeFiles/Trabalho_Alg2.dir/main.c.obj" \
 "CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj" \
 "CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.obj" \
-"CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.obj"
+"CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.obj" \
+"CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj"
 
 # External object files for target Trabalho_Alg2
 Trabalho_Alg2_EXTERNAL_OBJECTS =
@@ -122,11 +136,12 @@ Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/main.c.obj
 Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj
 Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.obj
 Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.obj
+Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj
 Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/build.make
 Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/linklibs.rsp
 Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/objects1.rsp
 Trabalho_Alg2.exe: CMakeFiles/Trabalho_Alg2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Trabalho_Alg2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\gabri\Documents\Gabriel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Trabalho_Alg2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Trabalho_Alg2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -139,6 +154,6 @@ CMakeFiles/Trabalho_Alg2.dir/clean:
 .PHONY : CMakeFiles/Trabalho_Alg2.dir/clean
 
 CMakeFiles/Trabalho_Alg2.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Arquivos D\CC\Trabalho Alg2" "C:\Arquivos D\CC\Trabalho Alg2" "C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug" "C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug" "C:\Arquivos D\CC\Trabalho Alg2\cmake-build-debug\CMakeFiles\Trabalho_Alg2.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\gabri\Documents\Gabriel C:\Users\gabri\Documents\Gabriel C:\Users\gabri\Documents\Gabriel\cmake-build-debug C:\Users\gabri\Documents\Gabriel\cmake-build-debug C:\Users\gabri\Documents\Gabriel\cmake-build-debug\CMakeFiles\Trabalho_Alg2.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Trabalho_Alg2.dir/depend
 
