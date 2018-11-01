@@ -129,7 +129,11 @@ int grava_cliente_txt(cliente *all,int qtd){
 
             }
         }
-        altera_qtd_clientes_txt(+1);
+        if(qtd<le_qtd_clientes_txt()){
+            altera_qtd_clientes_txt(-1);
+        }else{
+            altera_qtd_clientes_txt(+1);
+        }
         fclose(txt);
         return 1;
     }
@@ -149,7 +153,7 @@ int grava_cliente_txt(cliente *all,int qtd){
 //    }
 ////    grava_cliente_txt(-1);
 //}
-
+//
 
 
 

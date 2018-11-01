@@ -20,52 +20,74 @@ void salva_cliente(cliente *cli,int qtd){
     }
 }
 
-void remove_cliente(int id){
-    for (int i = 0; i <le_qtd_clientes_txt() ; ++i) {
-
+void remove_cliente(){
+    if(c==NULL){
+        le_cliente_txt();
     }
+    int codigo=0;
 
+    printf("Digite o codigo do cliente que deseja remover:");
+    scanf("%d%*c",&codigo);
+
+    int qtd=le_qtd_clientes_txt();
+
+    for (int i = 0; i <qtd ; ++i) {
+        if((c+i)->codigo >= codigo && (i+2)!=qtd){
+            *(c+i)=*(c+i+1);
+        } else if(i+1==qtd){
+            free((c+i));
+        }
+    }
+    salva_cliente(NULL,qtd-1);
+    grava_cliente_txt(c,qtd-1);
 }
 
 void mostra_clientes(int x,int y){
     if(c==NULL){
         le_cliente_txt();
     }
-    system("clrscr");
+    system("cls");
     gotoxy(x,y);
     textcolor(BLUE);
-    printf("----------------------CLIENTES CADASTRADOS---------------------\n");
+    printf("-----------------------------------CLIENTES CADASTRADOS----------------------------------\n");
+    x+=25;
     for (int i = 0; i <le_qtd_clientes_txt() ; ++i) {
-        x++;
-        x++;
+        y++;
         gotoxy(x,y);
-        printf("%d\n",(c+i)->codigo);
-        x++;
+        printf("Codigo do Cliente:%d",(c+i)->codigo);
+        y++;
         gotoxy(x,y);
-        printf("%s\n",(c+i)->nome);
-        x++;
+        printf("Nome:%s",(c+i)->nome);
+        y++;
         gotoxy(x,y);
-        printf("%s\n",(c+i)->endereco);
-        x++;
+        printf("Endereço:%s",(c+i)->endereco);
+        y++;
         gotoxy(x,y);
-        printf("%s\n",(c+i)->cpf);
-        x++;
+        printf("CPF:%s\n",(c+i)->cpf);
+        y++;
         gotoxy(x,y);
-        printf("%s\n",(c+i)->tel);
-        x++;
+        printf("Telefone:%s",(c+i)->tel);
+        y++;
         gotoxy(x,y);
-        printf("%s\n",(c+i)->email);
-        x++;
+        printf("E-mail:%s",(c+i)->email);
+        y++;
         gotoxy(x,y);
-        printf("%s\n",(c+i)->sexo);
-        x++;
+        printf("Sexo:%s",(c+i)->sexo);
+        y++;
         gotoxy(x,y);
-        printf("%s\n",(c+i)->estadocivil);
-        x++;
+        printf("Estado Civil:%s",(c+i)->estadocivil);
+        y++;
         gotoxy(x,y);
-        printf("%s\n",(c+i)->datanasc);
-        x++;
+        printf("Data de Nascimento:%s",(c+i)->datanasc);
+        y++;
+        x-=25;
+        gotoxy(x,y);
+        printf("-----------------------------------------------------------------------------------------");
+        x+=25;
+        gotoxy(x,y);
     }
+    y++;
+    gotoxy(x,y);
     textcolor(WHITE);
 
 }

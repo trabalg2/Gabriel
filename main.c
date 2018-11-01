@@ -19,7 +19,8 @@ int main (){
 
     setlocale(LC_ALL,"Portuguese");
 //    le_dados(le_qtd_clientes_txt());
-    mostra_clientes(0,0);
+    remove_cliente();
+    mostra_clientes(10,10);
 //    libera_memoria();
     system("pause");
 
