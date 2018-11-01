@@ -20,20 +20,53 @@ void salva_cliente(cliente *cli,int qtd){
     }
 }
 
-void mostra_clientes(){
-
+void remove_cliente(int id){
     for (int i = 0; i <le_qtd_clientes_txt() ; ++i) {
-        textcolor(BLUE);
-        printf("%d\n",(c+i)->codigo);
-        printf("%s\n",(c+i)->nome);
-        printf("%s\n",(c+i)->endereco);
-        printf("%s\n",(c+i)->cpf);
-        printf("%s\n",(c+i)->tel);
-        printf("%s\n",(c+i)->email);
-        printf("%s\n",(c+i)->sexo);
-        printf("%s\n",(c+i)->estadocivil);
-        printf("%s\n",(c+i)->datanasc);
+
     }
+
+}
+
+void mostra_clientes(int x,int y){
+    if(c==NULL){
+        le_cliente_txt();
+    }
+    system("clrscr");
+    gotoxy(x,y);
+    textcolor(BLUE);
+    printf("----------------------CLIENTES CADASTRADOS---------------------\n");
+    for (int i = 0; i <le_qtd_clientes_txt() ; ++i) {
+        x++;
+        x++;
+        gotoxy(x,y);
+        printf("%d\n",(c+i)->codigo);
+        x++;
+        gotoxy(x,y);
+        printf("%s\n",(c+i)->nome);
+        x++;
+        gotoxy(x,y);
+        printf("%s\n",(c+i)->endereco);
+        x++;
+        gotoxy(x,y);
+        printf("%s\n",(c+i)->cpf);
+        x++;
+        gotoxy(x,y);
+        printf("%s\n",(c+i)->tel);
+        x++;
+        gotoxy(x,y);
+        printf("%s\n",(c+i)->email);
+        x++;
+        gotoxy(x,y);
+        printf("%s\n",(c+i)->sexo);
+        x++;
+        gotoxy(x,y);
+        printf("%s\n",(c+i)->estadocivil);
+        x++;
+        gotoxy(x,y);
+        printf("%s\n",(c+i)->datanasc);
+        x++;
+    }
+    textcolor(WHITE);
 
 }
 
@@ -43,7 +76,6 @@ void libera_memoria(){
 }
 
 int valida_dados(cliente *c){
-    if(c.nome)
 }
 
 void le_dados(int qtd){

@@ -4,9 +4,9 @@
 CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.obj
  C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.c
  C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.h
-CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.obj
- C:/Users/gabri/Documents/Gabriel/bibliotecas/utilidades.c
- C:/Users/gabri/Documents/Gabriel/bibliotecas/utilidades.h
+CMakeFiles/Trabalho_Alg2.dir/bibliotecas/validator.c.obj
+ C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.h
+ C:/Users/gabri/Documents/Gabriel/bibliotecas/validator.c
 CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj
  C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.h
  C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.c
@@ -15,7 +15,7 @@ CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj
  C:/Users/gabri/Documents/Gabriel/modelo/variaveis.h
  C:/Users/gabri/Documents/Gabriel/persistencia/cadastro_txt/clientes_txt.h
 CMakeFiles/Trabalho_Alg2.dir/main.c.obj
- C:/Users/gabri/Documents/Gabriel/bibliotecas/utilidades.h
+ C:/Users/gabri/Documents/Gabriel/bibliotecas/validator.h
  C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.h
  C:/Users/gabri/Documents/Gabriel/main.c
  C:/Users/gabri/Documents/Gabriel/modelo/cliente.h
@@ -23,7 +23,6 @@ CMakeFiles/Trabalho_Alg2.dir/main.c.obj
  C:/Users/gabri/Documents/Gabriel/persistencia/cadastro_txt/clientes_txt.h
 CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj
  C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.h
- C:/Users/gabri/Documents/Gabriel/bibliotecas/utilidades.h
  C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.h
  C:/Users/gabri/Documents/Gabriel/modelo/cliente.h
  C:/Users/gabri/Documents/Gabriel/modelo/ponteiros.h

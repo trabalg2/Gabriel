@@ -8,7 +8,6 @@
 #include "../../modelo/cliente.h"
 #include "../../modelo/ponteiros.h"
 #include "../../modelo/variaveis.h"
-#include "../../bibliotecas/utilidades.h"
 #include <string.h>
 #include "../../controller/cliente_controller.h"
 #include "../../bibliotecas/conio.h"

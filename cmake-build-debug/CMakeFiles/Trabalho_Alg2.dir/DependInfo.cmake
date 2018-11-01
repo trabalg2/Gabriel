@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.c" "C:/Users/gabri/Documents/Gabriel/cmake-build-debug/CMakeFiles/Trabalho_Alg2.dir/bibliotecas/conio.c.obj"
-  "C:/Users/gabri/Documents/Gabriel/bibliotecas/utilidades.c" "C:/Users/gabri/Documents/Gabriel/cmake-build-debug/CMakeFiles/Trabalho_Alg2.dir/bibliotecas/utilidades.c.obj"
+  "C:/Users/gabri/Documents/Gabriel/bibliotecas/validator.c" "C:/Users/gabri/Documents/Gabriel/cmake-build-debug/CMakeFiles/Trabalho_Alg2.dir/bibliotecas/validator.c.obj"
   "C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.c" "C:/Users/gabri/Documents/Gabriel/cmake-build-debug/CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj"
   "C:/Users/gabri/Documents/Gabriel/main.c" "C:/Users/gabri/Documents/Gabriel/cmake-build-debug/CMakeFiles/Trabalho_Alg2.dir/main.c.obj"
   "C:/Users/gabri/Documents/Gabriel/persistencia/cadastro_txt/clientes_txt.c" "C:/Users/gabri/Documents/Gabriel/cmake-build-debug/CMakeFiles/Trabalho_Alg2.dir/persistencia/cadastro_txt/clientes_txt.c.obj"

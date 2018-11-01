@@ -80,10 +80,10 @@
 		<Unit filename="C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.h">
 			<Option target="Trabalho_Alg2"/>
 		</Unit>
-		<Unit filename="C:/Users/gabri/Documents/Gabriel/bibliotecas/utilidades.c">
+		<Unit filename="C:/Users/gabri/Documents/Gabriel/bibliotecas/validator.c">
 			<Option target="Trabalho_Alg2"/>
 		</Unit>
-		<Unit filename="C:/Users/gabri/Documents/Gabriel/bibliotecas/utilidades.h">
+		<Unit filename="C:/Users/gabri/Documents/Gabriel/bibliotecas/validator.h">
 			<Option target="Trabalho_Alg2"/>
 		</Unit>
 		<Unit filename="C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.c">
