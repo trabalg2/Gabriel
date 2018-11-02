@@ -9,5 +9,6 @@
 
 FILE *txt;
 FILE *qtd_cad_txt;
+FILE *ptr_ultimo_cliente_txt;
 
 #endif //TRABALHO_ALG2_PONTEIROS_H

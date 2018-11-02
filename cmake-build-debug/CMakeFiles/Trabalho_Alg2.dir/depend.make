@@ -14,6 +14,7 @@ CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj: ../modelo/clie
 CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj: ../modelo/variaveis.h
 CMakeFiles/Trabalho_Alg2.dir/controller/cliente_controller.c.obj: ../persistencia/cadastro_txt/clientes_txt.h
 
+CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../bibliotecas/conio.h
 CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../bibliotecas/validator.h
 CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../controller/cliente_controller.h
 CMakeFiles/Trabalho_Alg2.dir/main.c.obj: ../main.c

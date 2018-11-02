@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.h
+stdio.h
+-
+
 C:/Users/gabri/Documents/Gabriel/bibliotecas/validator.h
 
 C:/Users/gabri/Documents/Gabriel/controller/cliente_controller.h
@@ -29,6 +33,8 @@ string.h
 -
 bibliotecas/validator.h
 C:/Users/gabri/Documents/Gabriel/bibliotecas/validator.h
+bibliotecas/conio.h
+C:/Users/gabri/Documents/Gabriel/bibliotecas/conio.h
 locale.h
 -
 unistd.h

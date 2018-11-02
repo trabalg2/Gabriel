@@ -58,7 +58,7 @@ int altera_qtd_clientes_txt(int quantidade){
     }
 }
 
-int le_cliente_txt(){
+int le_cliente_txt(int x, int y){
     cliente cliente_lido;
     int cont=0;
     char *token;
@@ -97,7 +97,7 @@ int le_cliente_txt(){
                 token=strtok(NULL,";");
             }
             //lendo do txt passar 1
-            salva_cliente(&cliente_lido,cont);
+            salva_cliente(x,y,&cliente_lido,cont);
             cont++;
             dados = 0;
         }
@@ -108,13 +108,56 @@ int le_cliente_txt(){
     }
 }
 
+
+
+int le_ultimo_cliente_txt(){
+    int qtd=0;
+
+    struct stat st;
+
+    qtd_cad_txt=fopen("../arquivos/txt/ultimo_cliente.txt","r");
+
+    if(qtd_cad_txt!=NULL){
+
+        //pega as informações do  arquivo
+        stat("../arquivos/txt/ultimo_cliente.txt", &st);
+        if(st.st_size==0)
+        {
+            qtd=0;
+            return qtd;
+        }
+        else
+        {
+            fscanf(qtd_cad_txt,"%d",&qtd);
+            fclose(qtd_cad_txt);
+            return qtd;
+        }
+    }else{
+        qtd=0;
+        return qtd;
+    }
+
+};
+
+int salva_ultimo_cliente_txt(int ultimo){
+    ptr_ultimo_cliente_txt=fopen("../arquivos/txt/ultimo_cliente.txt","w");
+    if(ptr_ultimo_cliente_txt!=NULL){
+        fprintf(ptr_ultimo_cliente_txt,"%d",ultimo);
+        fclose(ptr_ultimo_cliente_txt);
+        return 1;
+    }else{
+        return 0;
+    }
+
+};
+
 int grava_cliente_txt(cliente *all,int qtd){
 
     txt=fopen("../arquivos/txt/clientes.txt","w");
     if (txt==NULL) {
         return 0;
     } else {
-        for (int i = 0; i <qtd+1 ; i++) {
+        for (int i = 0; i <qtd ; i++) {
             if((all+i)->codigo!=0)
             {
                fprintf(txt,"%d;",(all+i)->codigo);
@@ -138,23 +181,6 @@ int grava_cliente_txt(cliente *all,int qtd){
         return 1;
     }
 }
-
-//int remove_cliente_txt(){
-//    int cod,cont;
-//    cont=0;
-//    le_cliente_txt();
-//    printf("Digite o codigo do clliente que deseja Remover:\n");
-//    scanf("%d%*c",&cod);
-//    for (int i = 0; i < qtd_clientes_txt; ++i) {
-//        if(c[i].codigo==cod){
-//            c[i].codigo=0;
-//            cont++;
-//        }
-//    }
-////    grava_cliente_txt(-1);
-//}
-//
-
 
 
 
